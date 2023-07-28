@@ -1,0 +1,61 @@
+
+<div class="row">
+  <div class="col-md-12">Add Food</div>
+
+  <div class="row">
+
+    <form [formGroup]="productForm" (ngSubmit)="create()">
+
+        <div class="col-md-2"></div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4" style="color: red;">Tên</div>
+        <div class="col-md-4"><input type="text" formControlName="name" class="form-control" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4" style="color: red;">Giá</div>
+        <div class="col-md-4"><input type="text" formControlName="realPrice" class="form-control" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4" style="color: red;">Mô tả</div>
+        <div class="col-md-4"><input type="text" formControlName="des" class="form-control" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4" style="color: red;">Hình ảnh</div>
+        <div class="col-md-4"><input type="file" formControlName="imageUrl" class="form-control" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4" style="color: red;">Giá khuyến mại</div>
+        <div class="col-md-4"><input type="text" formControlName="price" class="form-control" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4" style="color: red;">Thời gian nấu</div>
+        <div class="col-md-4"><input type="text" formControlName="cookTime" class="form-control" />
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><button type="submit" class="btn btn-success">Add</button>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+</form>
+
+
